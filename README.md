@@ -12,7 +12,7 @@ The user can:
 * view tasks
 
 ### That's how it looks
-![](app.PNG)
+![](app.png)
 
 ### And here are tables
 ![](tables.png)
