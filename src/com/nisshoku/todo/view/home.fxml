@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="parentStackPane" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nisshoku.todo.controller.HomeController">
+   <children>
+      <AnchorPane fx:id="rootAnchorPane" prefHeight="400.0" prefWidth="700.0">
+         <children>
+            <AnchorPane prefHeight="106.0" prefWidth="700.0" style="-fx-background-color: #D32F2F;">
+               <children>
+                  <Label layoutX="280.0" layoutY="24.0" text="To Do" textFill="WHITE">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="refreshImg" fitHeight="35.0" fitWidth="37.0" layoutX="651.0" layoutY="65.0" onMouseClicked="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/refresh.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXTextField fx:id="nameTxt" alignment="CENTER" focusColor="#424242" layoutX="39.0" layoutY="153.0" prefHeight="33.0" prefWidth="230.0" promptText="Task" unFocusColor="#ff6659">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="addBtn" alignment="CENTER" buttonType="RAISED" layoutX="94.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #424242;" text="Add Task" textAlignment="CENTER" textFill="WHITE" />
+            <Separator layoutX="315.0" layoutY="140.0" orientation="VERTICAL" prefHeight="230.0" prefWidth="1.0" />
+            <JFXButton fx:id="logoutBtn" layoutX="586.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #9A0007;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextArea fx:id="descTxt" focusColor="#424242" layoutX="39.0" layoutY="214.0" prefHeight="95.0" prefWidth="230.0" promptText="Here enter task description" stylesheets="@../assets/style.css" unFocusColor="#ff6659" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextArea>
+            <ScrollPane hbarPolicy="NEVER" layoutX="336.0" layoutY="123.0" prefHeight="265.0" prefWidth="350.0">
+               <content>
+                  <VBox fx:id="tasksPane" prefHeight="263.0" prefWidth="348.0" style="-fx-background-color: #424242;" />
+               </content>
+            </ScrollPane>
+            <Label fx:id="infoLbl" alignment="CENTER" layoutY="106.0" prefHeight="33.0" prefWidth="317.0" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

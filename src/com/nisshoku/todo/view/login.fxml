@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="parentContainer" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nisshoku.todo.controller.LoginController">
+   <children>
+      <AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #D32F2F;">
+         <children>
+            <AnchorPane layoutY="104.0" prefHeight="296.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <JFXTextField fx:id="usernameTxt" focusColor="#424242" layoutX="200.0" layoutY="33.0" prefHeight="45.0" prefWidth="300.0" promptText="Username" unFocusColor="#ff6659">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passwordTxt" focusColor="#424242" layoutX="200.0" layoutY="103.0" prefHeight="45.0" prefWidth="300.0" promptText="Password" unFocusColor="#ff6659">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="230.0" layoutY="202.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="45.0" prefWidth="240.0" style="-fx-background-color: #424242;" text="Login" textFill="WHITE" />
+                  <Label fx:id="infoLabel" alignment="CENTER" layoutX="-3.0" layoutY="-2.0" prefHeight="30.0" prefWidth="700.0" textFill="#9a0007" />
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="275.0" layoutY="26.0" prefHeight="59.0" prefWidth="150.0" text="To Do" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="signUpBtn" layoutX="586.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#handleButtonAction" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #9A0007;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

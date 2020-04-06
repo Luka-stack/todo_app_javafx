@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="mainPane" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nisshoku.todo.controller.TaskThumbController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="360.0" style="-fx-background-color: #424242;">
+         <children>
+            <Label fx:id="nameLbl" layoutX="5.0" onMouseClicked="#handleButtonAction" prefHeight="50.0" prefWidth="130.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="deleteImg" fitHeight="30.0" fitWidth="30.0" layoutX="295.0" layoutY="10.0" onMouseClicked="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/remove1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="editImg" fitHeight="30.0" fitWidth="30.0" layoutX="255.0" layoutY="10.0" onMouseClicked="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/edit.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="dateLbl" layoutX="185.0" onMouseClicked="#handleButtonAction" prefHeight="50.0" prefWidth="65.0" text="Label" textFill="#d32f2f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
